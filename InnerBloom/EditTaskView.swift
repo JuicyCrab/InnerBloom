@@ -11,7 +11,7 @@ struct EditTaskView: View {
     var body: some View {
         VStack {
             Form {
-                TextField("Title", text: $title)
+                TextField("Titles", text: $title)
                     .padding()
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
