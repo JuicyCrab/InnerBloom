@@ -2,18 +2,19 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab = 0 // Default selected tab (Calendar)
+   
 
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
-                HomeView()
+                HomeTab()
                     .tabItem {
                         Image(systemName: "house")
                         Text("Home")
                     }
                     .tag(0)
                 
-                
+                Text("Ponders")
                     .tabItem {
                         Image(systemName: "book.closed")
                         Text("Ponders")
@@ -42,4 +43,9 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+
+
+    
 
