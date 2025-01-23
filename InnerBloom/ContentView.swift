@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedTab = 0 // Default selected tab (Calendar)
+    @State var selectedTab = 1 // Default selected tab (Calendar)
    
 
     var body: some View {
@@ -14,7 +14,8 @@ struct ContentView: View {
                     }
                     .tag(0)
                 
-                Text("Ponders")
+    
+                InteractiveCalendar(safeAreaInsets: EdgeInsets())
                     .tabItem {
                         Image(systemName: "book.closed")
                         Text("Ponders")
